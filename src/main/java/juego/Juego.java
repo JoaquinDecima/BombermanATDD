@@ -1,3 +1,8 @@
+package juego;
+
+import bomberman.*;
+import tablero.*;
+
 public class Juego {
 
     private Mapa mapa;

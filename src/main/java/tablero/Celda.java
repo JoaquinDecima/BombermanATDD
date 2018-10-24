@@ -1,7 +1,9 @@
+package tablero;
+
 public class Celda {
 
-    protected int x;
-    protected int y;
+    public int x;
+    public int y;
     private EstadoCelda estado;
 
     public Celda(int x , int y){

@@ -1,3 +1,5 @@
+package tablero;
+
 import java.util.Hashtable;
 
 public class Mapa {

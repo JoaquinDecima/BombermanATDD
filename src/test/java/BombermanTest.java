@@ -1,6 +1,9 @@
-import org.junit.Assert;
-import org.junit.Before;
+import bomberman.Bomberman;
+import bomberman.EstadoBomberman;
+import juego.Juego;
 import org.junit.Test;
+import tablero.EstadoCelda;
+import tablero.Mapa;
 
 import static org.junit.Assert.*;
 
@@ -10,12 +13,12 @@ public class BombermanTest {
     Mapa mapa = new Mapa(2); //cuadrado de 2 x 2 , celdas vacias, salvo la (0,0), ocupada por bman
     Juego juego = new Juego(mapa, bman);
 
-    //Bomberman siempre empieza en la posicion x=0, y=0
+    //bomberman.Bomberman siempre empieza en la posicion x=0, y=0
 
     @Test
     public void bombermanSeMueveALaCeldaNorteLaCualEstaVaciaYCambiaSuPosicion() {
 
-        assertEquals(juego.getMapa().getCelda(0, 0).getEstado(),EstadoCelda.BOMBERMAN);
+        assertEquals(juego.getMapa().getCelda(0, 0).getEstado(), EstadoCelda.BOMBERMAN);
         assertEquals(juego.getMapa().getCelda(0,1).getEstado(), EstadoCelda.VACIA);
 
         juego.moverBombermanNorte();

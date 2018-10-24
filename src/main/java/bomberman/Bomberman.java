@@ -1,3 +1,7 @@
+package bomberman;
+
+import bomba.Bomba;
+
 public class Bomberman {
 
     private Posicion posicionActual;
@@ -17,5 +21,9 @@ public class Bomberman {
 
     public EstadoBomberman getEstado(){
         return this.estado;
+    }
+
+    public void poner(Bomba boom){
+
     }
 }
